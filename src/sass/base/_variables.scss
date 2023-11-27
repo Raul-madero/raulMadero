@@ -1,0 +1,20 @@
+$theme-colors: (
+    "primary": #fcfcfc,
+  "secondary": #1abc9c,
+  "info": #e67e22,
+  "dark": #34495e,
+  "success": #2ecc71,
+  "danger": #c0392b,
+  "light": #ffffff,
+  "darker": #000000,
+  "warning": #ffc107,
+  "orange": #fd7e14,
+  "brown": #9e8070,
+  "olive": #808000,
+);
+
+
+$fuentePrincipal: 'Noto Sans', sans-serif;
+$fuenteTitulos: 'Lato', sans-serif;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
