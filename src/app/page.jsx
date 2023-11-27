@@ -1,6 +1,11 @@
+import Hero from "./components/Hero"
+import Resumen from "./components/Resumen"
 
 export default function Home() {
   return (
-    <h1>Desde Home</h1>
+    <>
+      <Hero/>
+      <Resumen/>
+    </>
   )
 }

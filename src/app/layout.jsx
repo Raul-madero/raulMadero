@@ -17,7 +17,7 @@ const noto = Noto_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={noto.className}>
+      <body className={[noto.className, " bg-brown"]}>
         <Header image={logoLight}/>
         {children}
         <Footer image={logoLight}/>
