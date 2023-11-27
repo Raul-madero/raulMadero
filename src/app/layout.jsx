@@ -17,11 +17,10 @@ const noto = Noto_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={[noto.className, " bg-brown"]}>
+      <body className={[noto.className, " bg-brown bg-opacity-50"]}>
         <Header image={logoLight}/>
         {children}
         <Footer image={logoLight}/>
-        <Script src='https://kit.fontawesome.com/89daf2435a.js' crossorigin='anonymous'></Script>
       </body>
     </html>
   )

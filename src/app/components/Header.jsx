@@ -13,7 +13,7 @@ const links = [
 ]
 const Header = (props) => {
     return ( 
-        <Navbar expand="md" className="bg-secondary container-xl" >
+        <Navbar expand="md" sticky="top" className="bg-secondary container-xl" >
             <Container>
                 <NavbarBrand href="/" className="mb-2"><Image src={props.image} alt="Logo" width={200} /></NavbarBrand>
                 <NavbarToggle aria-controls="basic-navbar-nav" />
