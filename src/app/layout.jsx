@@ -1,5 +1,8 @@
 import {Noto_Sans} from 'next/font/google'
 import Header from './components/Header'
+import Footer from './components/Footer'
+
+import Script from 'next/script'
 import "../sass/app.scss"
 import logoLight from '../img/logo/logoLight.png'
 export const metadata = {
@@ -17,6 +20,8 @@ export default function RootLayout({ children }) {
       <body className={noto.className}>
         <Header image={logoLight}/>
         {children}
+        <Footer image={logoLight}/>
+        <Script src='https://kit.fontawesome.com/89daf2435a.js' crossorigin='anonymous'></Script>
       </body>
     </html>
   )
