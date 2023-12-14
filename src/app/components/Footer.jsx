@@ -25,17 +25,17 @@ const Footer = (props) => {
                 <Col className="d-flex my-4 justify-content-center align-items-center" xs={12} md={3}>
                     <Row>
                         <Col>
-                            <Link href="https://twitter.com/rmaderoIV">
+                            <Link target="_blank" href="https://twitter.com/rmaderoIV">
                                 <FontAwesomeIcon icon={faXTwitter} size="2xl" style={{color: "#ffffee"}}/>
                             </Link>     
                         </Col>
                         <Col>
-                            <Link href={"https://github.com/Raul-madero?tab=repositories"}>
+                            <Link target="_blank" href={"https://github.com/Raul-madero?tab=repositories"}>
                                 <FontAwesomeIcon icon={faGithub} size="2xl" style={{color: "#ffffee"}}/>
                             </Link>
                         </Col>
                         <Col>
-                            <Link href={"https://www.linkedin.com/in/raul-madero-28060548/"}>
+                            <Link target="_blank" href={"https://www.linkedin.com/in/raul-madero-28060548/"}>
                                 <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{color: "#ffffee"}}/>
                             </Link>
                         </Col>
