@@ -2,7 +2,6 @@ import Image from "next/image"
 import { Carousel, CarouselItem, Container } from "react-bootstrap"
 import proyecto1 from "../../img/proyectos/blogDeCafe.webp"
 import calavera from "../../img/proyectos/calavera.webp"
-import dynamicCard from "../../img/proyectos/dinamic-card.webp"
 import excuse from "../../img/proyectos/excuse.webp"
 import feed from "../../img/proyectos/feed.webp"
 import fylo from "../../img/proyectos/fylo.webp"
@@ -15,7 +14,7 @@ import social from "../../img/proyectos/social.webp"
 import team from "../../img/proyectos/team.webp"
 import testimonials from "../../img/proyectos/testimonials.webp"
 import travel from "../../img/proyectos/travel.webp"
-import { Link } from "react-bootstrap/lib/Navbar"
+import Link from "next/link"
 
 const Proyectos = () => {
     const proyectos = [{
