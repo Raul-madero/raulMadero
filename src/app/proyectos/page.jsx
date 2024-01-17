@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Carousel, CarouselItem, Container } from "react-bootstrap"
+import { Carousel, CarouselItem, Container, CarouselCaption } from "react-bootstrap"
 import proyecto1 from "../../img/proyectos/blogDeCafe.webp"
 import calavera from "../../img/proyectos/calavera.webp"
 import excuse from "../../img/proyectos/excuse.webp"
