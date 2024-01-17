@@ -18,61 +18,90 @@ import Link from "next/link"
 
 const Proyectos = () => {
     const proyectos = [{
+                            title: 'Blog de Café',
+                            description: 'Página de blog de café realizada como practica para curso de HTML y CSS',
                             image: proyecto1,
                             url: "https://raul-madero.github.io/blogDeCafe/index.html"
-                        }, 
+                        },
                         {
+                            title: 'Agencia de Viajes',
+                            description: 'Realizada como practica para curso de Tailwind',
+                            image: travel,
+                            url: "https://raul-madero.github.io/Travels/"
+                        },
+                        {
+                            title: 'Juego de Calavera',
+                            description: 'Página de juego de calavera realizada como practica para curso de JavaScript',
                             image: calavera,
                             url: "https://raul-madero.github.io/calavera/"
                         }, 
                         {
+                            title: 'Generador de excusas',
+                            description: 'Realizado como practica para curso de JavaScript',
                             image: excuse,
                             url: "https://raul-madero.github.io/raulMadero_excuseGenerator/"
                         }, 
                         {
+                            title: 'Copia de feed de Instagram',
+                            description: 'Realizada como practica para curso de Bootstrap',
                             image: feed,
                             url: "https://raul-madero.github.io/raulMadero_instagramFeed/"
                         },
                         {
+                            title: 'Landing Page',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: fylo,
                             url: "https://raul-madero.github.io/Fylo/"
                         }, 
-                        { 
+                        {
+                            title: 'Landing',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: huddle,
                             url: "https://raul-madero.github.io/landing/"
                         },
                         {
+                            title: 'Portada de Página de Noticias',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: news,
                             url: "https://raul-madero.github.io/news-homepage/"
                         },
                         {
+                            title: 'Formulario de pago',
+                            description: 'Realizada como practica para curso de Bootstrap',
                             image: payment,
                             url: "https://raul-madero.github.io/raulMadero_HTML5form/"
                         },
                         {
+                            title: 'Post de Instagram',
+                            description: 'Realizado como practica para curso de Bootstrap',
                             image: post,
                             url: "https://raul-madero.github.io/instagramPost/"
                         },
                         {
+                            title: 'Festival Musical',
+                            description: 'Realizada como practica para curso de HTML y CSS práctico',
                             image: rockBand,
                             url: "https://raul-madero.github.io/rockband/"
                         },
                         {
+                            title: 'Feed Social',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: social,
                             url: "https://raul-madero.github.io/social-proof/"
                         },
                         {
+                            title: 'Equipo',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: team,
                             url: "https://raul-madero.github.io/team/"
                         },
                         {
+                            title: 'Landing de Testimonios',
+                            description: 'Realizada como practica en Frontend Mentor',
                             image: testimonials,
                             url: "https://raul-madero.github.io/testimonials/"
-                        },
-                        {
-                            image: travel,
-                            url: "https://raul-madero.github.io/Travels/"
-                        }]
+                        }
+                        ]
     return (
         <Container className="my-4 p-3">
             <h1 className="mb-2 text-center text-bg-info w-50 mx-auto text-olive bg-opacity-50 p-3">Proyectos</h1>
@@ -83,6 +112,10 @@ const Proyectos = () => {
                         <Link href={proyecto.url} target="_blank">
                             <Image style={{width: "100%", maxHeight: "350px"}} alt="Proyect" src={proyecto.image}/>
                         </Link>
+                        <CarouselCaption>
+                            <h3 className="bg-dark bg-opacity-50 text-light">{proyect.title}</h3>
+                            <p className="bg-dark bg-opacity-50 text-light">{proyect.description}</p>
+                        </CarouselCaption>
                     </CarouselItem>
                 ))}
                 
