@@ -15,9 +15,65 @@ import social from "../../img/proyectos/social.webp"
 import team from "../../img/proyectos/team.webp"
 import testimonials from "../../img/proyectos/testimonials.webp"
 import travel from "../../img/proyectos/travel.webp"
+import { Link } from "react-bootstrap/lib/Navbar"
 
 const Proyectos = () => {
-    const proyectos = [proyecto1, calavera, dynamicCard, excuse, feed, fylo, huddle, news, payment, post, rockBand, social, team, testimonials, travel]
+    const proyectos = [{
+                            image: proyecto1,
+                            url: "https://raul-madero.github.io/blogDeCafe/index.html"
+                        }, 
+                        {
+                            image: calavera,
+                            url: "https://raul-madero.github.io/calavera/"
+                        }, 
+                        {
+                            image: excuse,
+                            url: "https://raul-madero.github.io/raulMadero_excuseGenerator/"
+                        }, 
+                        {
+                            image: feed,
+                            url: "https://raul-madero.github.io/raulMadero_instagramFeed/"
+                        },
+                        {
+                            image: fylo,
+                            url: "https://raul-madero.github.io/Fylo/"
+                        }, 
+                        { 
+                            image: huddle,
+                            url: "https://raul-madero.github.io/landing/"
+                        },
+                        {
+                            image: news,
+                            url: "https://raul-madero.github.io/news-homepage/"
+                        },
+                        {
+                            image: payment,
+                            url: "https://raul-madero.github.io/raulMadero_HTML5form/"
+                        },
+                        {
+                            image: post,
+                            url: "https://raul-madero.github.io/instagramPost/"
+                        },
+                        {
+                            image: rockBand,
+                            url: "https://raul-madero.github.io/rockband/"
+                        },
+                        {
+                            image: social,
+                            url: "https://raul-madero.github.io/social-proof/"
+                        },
+                        {
+                            image: team,
+                            url: "https://raul-madero.github.io/team/"
+                        },
+                        {
+                            image: testimonials,
+                            url: "https://raul-madero.github.io/testimonials/"
+                        },
+                        {
+                            image: travel,
+                            url: "https://raul-madero.github.io/Travels/"
+                        }]
     return (
         <Container className="my-4 p-3">
             <h1 className="mb-2 text-center text-bg-info w-50 mx-auto text-olive bg-opacity-50 p-3">Proyectos</h1>
@@ -25,7 +81,9 @@ const Proyectos = () => {
             <Carousel className="carousel-diploma">
                 {proyectos.map((proyecto, index) => (
                     <CarouselItem key={index}>
-                        <Image style={{width: "100%", maxHeight: "350px"}} alt="Proyect" src={proyecto}/>
+                        <Link href={proyecto.url} target="_blank">
+                            <Image style={{width: "100%", maxHeight: "350px"}} alt="Proyect" src={proyecto.image}/>
+                        </Link>
                     </CarouselItem>
                 ))}
                 

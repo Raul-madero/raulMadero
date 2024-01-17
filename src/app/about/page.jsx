@@ -35,7 +35,7 @@ import diploma31 from "../../img/diplomas/diploma31.webp"
 import diploma32 from "../../img/diplomas/diploma32.webp"
 
 const About = () => {
-    const diplomas = [diploma1, diploma2, diploma3, diploma4, diploma5, diploma6, diploma7, diploma8, diploma9, diploma10, diploma11, diploma12, diploma13, diploma14, diploma15, diploma16, diploma17, diploma18, diploma19, diploma20, diploma21, diploma22, diploma23, diploma24, diploma25, diploma26, diploma27, diploma27, diploma28, diploma29, diploma30, diploma31, diploma32]
+    const diplomas = [{diploma1}, diploma2, diploma3, diploma4, diploma5, diploma6, diploma7, diploma8, diploma9, diploma10, diploma11, diploma12, diploma13, diploma14, diploma15, diploma16, diploma17, diploma18, diploma19, diploma20, diploma21, diploma22, diploma23, diploma24, diploma25, diploma26, diploma27, diploma27, diploma28, diploma29, diploma30, diploma31, diploma32]
     return (
         <Container >
             <Container>
