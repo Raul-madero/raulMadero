@@ -113,8 +113,8 @@ const Proyectos = () => {
                             <Image style={{width: "100%", maxHeight: "350px"}} alt="Proyect" src={proyecto.image}/>
                         </Link>
                         <CarouselCaption>
-                            <h3 className="bg-dark bg-opacity-50 text-light">{proyect.title}</h3>
-                            <p className="bg-dark bg-opacity-50 text-light">{proyect.description}</p>
+                            <h3 className="bg-dark bg-opacity-50 text-light">{proyecto.title}</h3>
+                            <p className="bg-dark bg-opacity-50 text-light">{proyecto.description}</p>
                         </CarouselCaption>
                     </CarouselItem>
                 ))}
